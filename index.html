@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food</title>
+    <!--CSS STYLE-->
+    <link rel="stylesheet" href="style.css">
+    <!--BOOTSTRAP CSS STYLE-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/5904ffcc1f.js" crossorigin="anonymous"></script>
+    <!--SCRIPT JS-->
+    <script src="JS.js"></script>
+    
+</head>
+<body>
+    <header>
+            <!--Navber-->
+            <div class="filtre">
+            <nav class="navbar my-nav navbar-expand-lg  ">
+                   <div class="container">
+                        <a class="navbar-brand" href="#"><img src="image/logo.png" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="">
+                            <i class="fas fa-bars"></i>
+                      </span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarNav">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">ABOUT <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#list-img">OUR FOOD</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#palns">PLANS</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn">CONTACT US</button>
+
+                        </li>
+                      </ul>
+                    </div>
+                   </div>
+                  </nav>
+            <!--/navbar-->
+            <div class="intro">
+                        <p class="title">Have no time <br>
+                            to prepare <span style="color: #F8A22F;">food</span>?</p>
+                            <p class="disc">Le Lorem Ipsum est simplement du faux texte employé dans la composition
+                             et la mise en page avant impression. 
+                             </p>
+                             <button type="button" class="btn">Order Food</button>
+
+            </div>
+            <div class="row social">
+                <div class="col-md-6">
+                  <div class="icon pb-2">
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fas fa-basketball-ball"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                  </div>
+              <div class="col-md-6">
+                <div class="scrollBottom pt-5 ml-5">
+                    <a href="#list-img"><img src="image/Group 3.png" alt=""></a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+    </header>
+
+    <main>
+      <!--section1-->
+        <!--Food liste-->
+        <div id="list-img">
+            <div class="filtre2">
+                <div class="row rowlist w-100">
+                    <div class="col-md-9 col-mb-9 ">
+                    </div>
+                      <div class="col-md-3 col-mb-3">
+                          <div class="list pt-5 pl-5">
+                              <h2 class="titleList"><span style="border-bottom: 3px solid #F8A22F;">OUR FO</span>OD</h2>
+                                <ul class="itemList">
+                                  <li>
+                                    <i class="fas fa-plus-circle pr-2"></i>
+                                    <p class="titreList">Signature Pizzas</p>
+                                    <p class="discList">Le Lorem Ipsum est simplement du faux texte</p>
+                                  </li>
+                                  <li>
+                                      <i class="fas fa-plus-circle pr-2"></i>
+                                      <p class="titreList">Oven-Baked Subs</p>
+                                      <p class="discList">Le Lorem Ipsum est simplement du faux texte</p>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-plus-circle pr-2"></i>
+                                        <p class="titreList">wings, Sides & More</p>
+                                        <p class="discList">Le Lorem Ipsum est simplement du faux texte</p>
+                                      </li>
+                                    <li>
+                                        <button type="button" class="btn">Order Food</button>
+                                    </li>
+                                </ul>
+                           </div>
+                      </div>
+                    
+                  </div>
+              </div>
+        </div>
+        <!--/Food liste-->
+      <!--/section1-->
+      
+    <!--section2-->
+    <section id="palns">
+      <div class="filtre3">
+        <div class="PLAN">
+            <h2 class="titrePlan ">P<span style="border-bottom: 5px solid #fff;">LAN</span>S</h2>
+            <div class="row w-100">
+              <div class="col-md-6 col-mb-6">
+                <img src="image/Group 143.png"  alt="">
+              </div>
+              <div class="col-md-6 col-mb-6">
+                  <img src="image/Group 142.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+     
+    <!--/section2-->
+
+    <!--section 3-->
+    <section class="contact">
+        <h2 class="titleContact"><span style="border-bottom: 3px solid #F8A22F;">Cont</span>act us</h2>
+            <div class="row w-100">
+              <div class="col-md-6">
+                <div class="contactSetion pt-5">
+                    <div id="error"></div>
+                  <form id="form" action="/" method="GET">
+                    <div>
+                        <input type="text" id="name" name="user_name" placeholder="Full Name">
+                        <span class="missName"></span>
+                    </div>
+                    <div>
+                        <input type="text" id="phone" name="user_name" placeholder="Phone No">
+                    </div>
+                    <div>
+                        <input type="email" id="mail" name="user_mail" placeholder="Email">
+                    </div>
+                    <div>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </div>
+                   <div>
+                    <button type="submit" class="btnForm" id="bouton-envoi" value="submit" onclick="addEventListener()">Order Food</button>
+                   </div>
+            </form>
+                 </div>
+          
+              </div>
+              <div class="col-md-6">
+              </div>
+          </div>
+  
+          <iframe style="border: 0;" src="https://www.google.com/maps/place/Noida+Special+Economy+Zone,+Block+A,+Sector+81,+Noida,+Uttar+Pradesh+201305,+Inde/@28.5411257,77.3900771,15z/data=!3m1!4b1!4m5!3m4!1s0x390ce8b6585ce7f7:0x10a64315b9d05726!8m2!3d28.5413965!4d77.3970354" width="100%" height="400" frameborder="0"></iframe>
+    </section>  
+    <!--/section 3-->
+    </main>
+        
+
+    <footer>
+      <div class="footerSection">
+          <div class="row w-100">
+              <div class="col-md-3 col-mb-3">
+                <img src="image/FOOD.LOGO-1.png" width="200px" alt="">
+              </div>
+              <div class="col-md-3 col-mb-3">
+                  <p class="text-white"><strong>Contact</strong></p>
+                  <p class="text-white contDisc">Le Lorem Ipsum est simplement du faux texte </p>
+                  <p class="text-white contDisc">Le Lorem Ipsum est simplement du faux texte </p>
+                  <p class="text-white contDisc">Le Lorem Ipsum est simplement du faux texte </p>
+                  <p class="text-white contDisc">Le Lorem Ipsum est simplement du faux texte </p>
+              </div>
+              <div class="col-md-3 col-mb-3">
+                  <p class="text-white"><strong>Menu</strong></p>
+                  <p class="text-white contDisc">About us</p>
+                  <p class="text-white contDisc">Our Food</p>
+                  <p class="text-white contDisc">Plans </p>
+                  <p class="text-white contDisc">Contact us</p>
+              </div>
+              <div class="col-md-3 col-mb-3">
+                  <p class="text-white Follow"><strong>Follow Us</strong></p>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+      
+      
+              </div>
+            </div>
+      </div>
+    </footer>
+    <!--SCRIPT-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
