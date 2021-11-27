@@ -3,7 +3,8 @@ html,
 body{
     margin: 0;
     padding: 0;
-    height: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 /*NAVBAR STYLE*/
 
@@ -24,7 +25,20 @@ header{
     background-color:rgb(0,0,0,00);
     border-color: rgb(0,0,0,00);
 }
-.navbar-nav .nav-item:not(.btn){
+.contactbtn{
+    background-color: #F8A22F;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.contactbtn:hover{
+    background-color: transparent;
+    border: 1px solid #F8A22F;
+    
+}
+
+
+.navbar-nav .nav-item{
     font-size: 14px;
     padding-right: 50px;
 }
@@ -33,18 +47,18 @@ header{
 }
 .navbar-nav .nav-item .nav-link{
     color: #ffffff;
-}
-.navbar-nav .nav-item .btn{
-    height: 45px;
-    width: 120px;
-    background-color: #F8A22F;
-    border-radius: 20px;
-    font-size: 14px;
-    color: #ffffff;
+    transition: ease .2s;
 
 }
 .active .nav-link{
     border-bottom: 3px solid #F8A22F;
+}
+.active .nav-link:hover{
+    border:none;
+}
+.nav-link:hover:not(.contactbtn){
+    border-bottom: 3px solid #F8A22F;
+    transition: ease .2s;
 }
 .fa-bars{
     color: #F8A22F;
@@ -89,30 +103,24 @@ header{
 
 /*icon social media*/
 .social{
-    width: 100%;
-    padding-top:5%;
+    padding-top:30px;
+    display: inline-block;
 }
 .icon{
     padding-left:20%;
 }
 .icon a{
-    padding:10px;
+    font-size: 20px;
+    padding: 0px 15px;
     color: #888888;
 }
 .icon a:hover{
-    color: #888888;
+    color: #F8A22F;
 }
 
 /* end icon social media*/
 
 /*section1*/
-#list-img{
-    background-image: url("image/Mask\ Group\ 2.png");
-    background-attachment: scroll;
-    background-position-x:0;
-    background-repeat: no-repeat;
-    height: 537px;
-}
     
 .rowlist{
     margin-top:10%;
@@ -161,6 +169,16 @@ header{
     text-align: center;
         padding-top: 5%;
 }
+
+.planimg{
+    filter: blur(2px);
+}
+
+.planimg:hover{
+    filter: blur(0px);
+}
+
+
 .PLAN img{
     padding-top:10%;
     width: 90%;
